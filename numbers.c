@@ -69,14 +69,15 @@ return (count);
 int _binary(va_list k)
 {
 unsigned int b =va_arg(k, unsigned int);
-char str[128];
-int count = 0;
-int i = 0;
-if (b == 0)
+char str[INT_MAX];
+int count = 0, i = 0;
+
+if (!b)
 {
 _putchar('0');
-return (++count);
+return (1);
 }
+
 for (; b > 0; b /= 2)
 {
 str[i] += (b % 2) + '0';
