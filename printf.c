@@ -53,7 +53,7 @@ i++;
 else if (format[i] == '%')
 {
 i++;
-for (b = 0; b < 9; b++)
+for (b = 0; b < 10; b++)
 {
 if (format[i] == array[b].m)
 {
