@@ -59,6 +59,13 @@ x /= 10;
 }
 return (count);
 }
+
+/**
+ * _binary - prints an unsigned integer in binary format
+ * @k: the variable argument list
+ *
+ * Return: number of characters printed
+ */
 int _binary(va_list k)
 {
 unsigned int b =va_arg(k, unsigned int);

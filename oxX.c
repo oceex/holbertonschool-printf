@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * _octal - prints an unsigned integer in octal format
+ * @k: the variable argument list
+ *
+ * Return: number of characters printed
+ */
 int _octal(va_list k)
 {
 unsigned int v = va_arg(k, unsigned int);
@@ -21,6 +26,12 @@ count++;
 return (count);
 }
 
+/**
+ * _hex - prints an unsigned integer in lowercase hexadecimal format
+ * @k: the variable argument list
+ *
+ * Return: number of characters printed
+ */
 int _hex(va_list k)
 {
 unsigned int v = va_arg(k, unsigned int);
@@ -68,6 +79,12 @@ count++;
 return (count);
 }
 
+/**
+ * _HEX - prints an unsigned integer in uppercase hexadecimal format
+ * @k: the variable argument list
+ *
+ * Return: number of characters printed
+ */
 int _HEX(va_list k)
 {
 unsigned int v = va_arg(k, unsigned int);
