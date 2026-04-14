@@ -12,7 +12,10 @@ char str[32];
 int i = 0;
 int count = 0;
 if (v == 0)
+{
 _putchar('0');
+return (1);
+}
 for (; v > 0; v/= 8)
 {
 str[i] = (v % 8) + '0';
