@@ -36,6 +36,7 @@ map array[] = {
 {'x', _hex},
 {'X', _HEX},
 {'i', _int},
+{'b', _binary},
 {0, NULL}
 };
 int b = 0;
