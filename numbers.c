@@ -88,7 +88,6 @@ while (i--)
 {
 _putchar(str[i]);
 count++;
-i--;
 }
 return (count);
 }
