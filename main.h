@@ -3,6 +3,20 @@
 #include <stdarg.h>
 #include <unistd.h>
 int _putchar(char c);
+int _printf(const char *format, ...)
+
+int _backslash(int index, const char *format);
+
 int _char(va_list k);
 int _string(va_list k);
+int _int(va_list k);
+int _unsignedint(va_list k);
+
+typedef int (*handler_func)(va_list);
+
+typedef struct map {
+    char m;
+    handler_func func;
+} map;
+
 #endif
