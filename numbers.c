@@ -69,7 +69,7 @@ return (count);
 int _binary(va_list k)
 {
 unsigned int b =va_arg(k, unsigned int);
-char str[32];
+char str[128];
 int count = 0;
 int i = 0;
 if (b == 0)
@@ -77,14 +77,14 @@ if (b == 0)
 _putchar('0');
 return (++count);
 }
-for (; b > 0; b/= 2)
+for (; b > 0; b /= 2)
 {
-str[i] += b % 2;
+str[i] += (b % 2) + '0';
 i++;
 }
-while (i--)
+while (--i)
 {
-_putchar(str[i] + '0');
+_putchar(str[i]);
 count++;
 }
 return (count);
