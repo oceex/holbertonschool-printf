@@ -85,7 +85,7 @@ i++;
 }
 while (i + 1)
 {
-_putchar(str[i]);
+_putchar(str[i - 1]);
 count++;
 i--;
 }
