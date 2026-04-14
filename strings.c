@@ -1,4 +1,13 @@
 #include "main.h"
+/**
+ * _char - Prints a single character
+ * @k: The va_list containing the character to print
+ *
+ * Description: Retrieves an int from the argument list and prints it
+ * as a character using _putchar.
+ *
+ * Return: Always returns 1 (number of characters printed).
+ */
 
 int _char(va_list k)
 {
@@ -6,6 +15,16 @@ int m = va_arg(k, int);
 _putchar(m);
 return(1);
 }
+/**
+ * _string - Prints a string
+ * @k: The va_list containing the string to print
+ *
+ * Description: Retrieves a char pointer from the argument list and
+ * prints it character by character. If the string is NULL, the
+ * function prints "(null)" instead.
+ *
+ * Return: The number of characters printed.
+ */
 
 int _string(va_list k)
 {
@@ -29,44 +48,3 @@ i++;
 return (count);
 }
 
-int _int(va_list k)
-{
-int n = va_arg(k, int);
-int count = 0;
-unsigned int m = 0, x = 1;
-if (n < 0)
-{
-m = -n;
-_putchar('-');
-count++;
-}
-else
-m = n;
-while (m / x >= 10)
-x *= 10;
-while (x > 0)
-{
-_putchar(m / x + '0');
-count++;
-m %= x;
-x /= 10;
-}
-return (count);
-}
-int _unsignedint(va_list k)
-{
-unsigned int n = va_arg(k, int);
-int count = 0;
-unsigned int m = 0, x = 1;
-m = n;
-while (m / x >= 10)
-x *= 10;
-while (x > 0)
-{
-_putchar(m / x + '0');
-count++;
-m %= x;
-x /= 10;
-}
-return (count);
-}
