@@ -83,10 +83,10 @@ for (; b > 0; b /= 2)
 str[i] = (b % 2) + '0';
 i++;
 }
-while (i >= 0)
-{
 
-_putchar(str[i - 1]);
+while (i--)
+{
+_putchar(str[i]);
 count++;
 i--;
 }
