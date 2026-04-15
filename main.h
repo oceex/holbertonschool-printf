@@ -16,6 +16,7 @@ int _octal(va_list k);
 int _hex(va_list k);
 int _HEX(va_list k);
 int _binary(va_list k);
+int _reversed(va_list k);
 
 typedef int (*handler_func)(va_list);
 

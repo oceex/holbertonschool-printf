@@ -47,4 +47,32 @@ i++;
 }
 return (count);
 }
-
+/**
+ * _reversed - Prints a string in reverse
+ * @k: va_list containing the argument to print
+ *
+ * Return: Number of characters printed
+ */
+int _reversed(va_list k)
+{
+char *m = va_arg(k, char*);
+char *x = "(null)";
+int i = 0, count = 0;
+if (m == NULL)
+{
+for (; i <= 5; i++)
+{
+_putchar(x[i]);
+count++;
+}
+return (count);
+}
+while (m[i] != '\0')
+i++;
+while (i--)
+{
+_putchar(m[i]);
+count++;
+}
+return (count);
+}
