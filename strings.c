@@ -101,14 +101,14 @@ while (m[i] != '\0')
 if (m[i] >= 65 && m[i] <= 90)
 {
 if (m[i] >= 65 && m[i] <= 77)
-_putchar(m[i] + 13)
+_putchar(m[i] + 13);
 else
 _putchar(m[i] - 13);
 }
 else if (m[i] >= 97 && m[i] <= 122)
 {
 if (m[i] >= 97 && m[i] <= 109)
-_putchar(m[i] + 13)
+_putchar(m[i] + 13);
 else
 _putchar(m[i] - 13);
 }
