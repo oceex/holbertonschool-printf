@@ -76,3 +76,45 @@ count++;
 }
 return (count);
 }
+/**
+ * _rot13 - Encodes a string using ROT13 and prints it
+ * @k: va_list containing the string to encode
+ *
+ * Return: Number of characters printed
+ */
+int _rot13(va_list k)
+{
+char *m = va_arg(k, char*);
+char *x = "(null)";
+int i = 0, count = 0;
+if (m == NULL)
+{
+for (; i <= 5; i++)
+{
+_putchar(x[i]);
+count++;
+}
+return (count);
+}
+while (m[i] != '\0')
+{
+if (m[i] >= 65 && m[i] <= 90)
+{
+if (m[i] >= 65 && m[i] <= 77)
+_putchar(m[i] + 13)
+else
+_putchar(m[i] - 13);
+}
+else if (m[i] >= 97 && m[i] <= 122)
+{
+if (m[i] >= 97 && m[i] <= 109)
+_putchar(m[i] + 13)
+else
+_putchar(m[i] - 13);
+}
+else
+_putchar(m[i]);
+count++;
+i++;
+}
+}
