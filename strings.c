@@ -117,4 +117,5 @@ _putchar(m[i]);
 count++;
 i++;
 }
+return (count);
 }
