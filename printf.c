@@ -38,6 +38,7 @@ map array[] = {
 {'i', _int},
 {'b', _binary},
 {'r', _reversed},
+{'R', _rot13},
 {0, NULL}
 };
 int b = 0;
@@ -54,7 +55,7 @@ i++;
 else if (format[i] == '%')
 {
 i++;
-for (b = 0; b < 11; b++)
+for (b = 0; b < 12; b++)
 {
 if (format[i] == array[b].m)
 {
