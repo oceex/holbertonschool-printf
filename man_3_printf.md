@@ -13,6 +13,9 @@ _printf \- custom recreation of the printf function
 The _printf function outputs using a format string and writes it to stdout.
 .PP
 
+The format string is composed of 0 or more directives, characters are copied into the output. Each character introduces the its own specifier. If the string detects an unknown specifier, _printf prints it unchanged. 
+
+.PP
 .B Specifiers
 
 .br
@@ -35,4 +38,7 @@ The _printf function outputs using a format string and writes it to stdout.
 %r: Prints a reversed string
 .br
 %R: Prints a rot13 string
+
+.SH AUTHOR
+Leen Algraawi / Reema Almujalli
 ```
