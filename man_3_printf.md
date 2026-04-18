@@ -4,13 +4,14 @@
 .SH NAME
 _printf \- custom recreation of the printf function
 
-.SH DESCRIPTION
-The _printf function outputs using a format string with conversion specifiers
-
 .SH SYNOPSIS
 .B #include "main.h"
 .br
 .B int _printf(const char *format, ...);
+
+.SH DESCRIPTION
+The _printf function outputs using a format string and writes it to stdout.
+.PP
 
 .B Specifiers
 
