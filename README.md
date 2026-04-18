@@ -1,10 +1,11 @@
-##_printf
+## _printf
 
 A project recreating printf function. 
 
 ## Description
 
 _printf function outputs using a format string with conversion specifiers.
+The format string is composed of 0 or more directives, characters are copied into the output. Each character introduces the its own specifier.
 
 ## Specifiers
 
