@@ -27,18 +27,18 @@ The format string is composed of 0 or more directives, characters are copied int
 .br
 %i: Prints integers
 .br
-%b: Prints binary
+%b: Prints in binary
 .br
 %u: Prints unsigned integers
 .br
-%x: Prints hexadecimal in lowercase
+%x: Prints hexadecimals in lowercase
 .br
-%X: Prints hexadecimal in uppercase
+%X: Prints hexadecimals in uppercase
 .br
 %r: Prints a reversed string
 .br
 %R: Prints a rot13 string
 
-.SH AUTHOR
+.SH AUTHORS
 Leen Algraawi / Reema Almujalli
 ```
